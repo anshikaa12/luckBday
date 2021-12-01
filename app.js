@@ -4,9 +4,13 @@ var checkbtn = document.querySelector("#btn");
 var outputText = document.querySelector("#result");
 
 
+
 checkbtn.addEventListener("click", function checkB() {
     var s = sum(dob.value);
-    if (s % (lucky.value) === 0) {
+    if (dob.value == NULL) {
+        outputText.innerText = "Enter your birthdate";
+    }
+    else if (s % (lucky.value) === 0) {
         outputText.innerText = "🤩Your birthday is luckyy!🤩";
 
 
