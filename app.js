@@ -7,7 +7,8 @@ var outputText = document.querySelector("#result");
 
 checkbtn.addEventListener("click", function checkB() {
     var s = sum(dob.value);
-    if (dob.value == NULL) {
+    console.log(lucky.value);
+    if (lucky.value == "") {
         outputText.innerText = "Enter your birthdate";
     }
     else if (s % (lucky.value) === 0) {
